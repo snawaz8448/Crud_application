@@ -1,0 +1,46 @@
+main {
+    max-width: 60vw;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(222, 248, 239)
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.contact-form,
+.contact-details {
+    flex: 1;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    max-height: 120px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}

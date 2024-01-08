@@ -1,0 +1,35 @@
+main {
+    max-width: 60vw;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(222, 248, 239)
+}
+
+.hero {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.latest-projects {
+    margin-top: 40px;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}

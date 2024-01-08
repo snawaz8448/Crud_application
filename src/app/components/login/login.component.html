@@ -1,0 +1,160 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="col-6 m-auto mt-5 p-3 shadow"
+      *ngIf="signupp; else loginnnn"
+      style="background-color: rgb(238, 254, 249)"
+    >
+      <div style="font-size: 30px; margin: auto; text-align: center">
+        <i class="fas fa-home"></i>
+        <!-- Example of a home icon -->
+      </div>
+      <form [formGroup]="loginform">
+        <!-- <div class="mb-3">
+        <label for="firstName" class="form-label"> Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          placeholder="Enter your first name"
+          [formControl]="name"
+          required
+        />
+        <span
+          class="text-md"
+          *ngIf="name.invalid && name.touched && name.validator"
+          style="color: red"
+          >{{ getErrorMessage(name, "Name") }}</span
+        >
+      </div> -->
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            [formControl]="email1"
+            required
+          />
+          <span
+            class="text-md"
+            *ngIf="email1.invalid && email1.touched && email1.validator"
+            style="color: red"
+            >{{ getErrorMessage(email1, "Email") }}</span
+          >
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">number*</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number"
+            placeholder="eg-0123456789"
+            [formControl]="number1"
+            required
+          />
+          <span
+            class="text-md"
+            *ngIf="number1.invalid && number1.touched && number1.validator"
+            style="color: red"
+            >{{ getErrorMessage(number1, "Number") }}</span
+          >
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="login()">
+          Log-In
+        </button>
+      </form>
+      <br />
+      <p>
+        Create Account
+        <span
+          (click)="signupppp()"
+          style="color: rgb(68, 68, 237); cursor: pointer"
+          >Sign-Up</span
+        >
+      </p>
+      <span><a routerLink="../forgotpassword">forgot-password</a></span>
+    </div>
+
+    <br />
+  </div>
+</div>
+
+<ng-template #loginnnn>
+  <div
+    class="col-6 m-auto mt-5 p-3 shadow"
+    style="background-color: rgb(238, 254, 249)"
+  >
+    <div style="font-size: 30px; margin: auto; text-align: center">
+      <i class="fas fa-home"></i>
+      <!-- Example of a home icon -->
+    </div>
+    <form [formGroup]="signupform">
+      <div class="mb-3">
+        <label for="firstName" class="form-label"> Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          placeholder="Enter your first name"
+          [formControl]="name"
+          required
+        />
+        <span
+          class="text-md"
+          *ngIf="name.invalid && name.touched && name.validator"
+          style="color: red"
+          >{{ getErrorMessage(name, "Name") }}</span
+        >
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="name@example.com"
+          [formControl]="email"
+          required
+        />
+        <span
+          class="text-md"
+          *ngIf="email.invalid && email.touched && email.validator"
+          style="color: red"
+          >{{ getErrorMessage(email, "Email") }}</span
+        >
+      </div>
+      <div class="mb-3">
+        <label for="number" class="form-label">number*</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          placeholder="0123456789"
+          [formControl]="number"
+          required
+        />
+        <span
+          class="text-md"
+          *ngIf="number.invalid && number.touched && number.validator"
+          style="color: red"
+          >{{ getErrorMessage(number, "Number") }}</span
+        >
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="signup()">
+        Sign-Up
+      </button>
+    </form>
+    <br />
+    <p>
+      Already have account
+      <span (click)="loginnn()" style="color: rgb(68, 68, 237); cursor: pointer"
+        >Log-In</span
+      >
+    </p>
+    <span><a routerLink="../forgotpassword">forgot-password</a></span>
+  </div>
+</ng-template>

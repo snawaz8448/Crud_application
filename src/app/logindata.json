@@ -1,0 +1,89 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "logindata": [
+    {
+      "name": "hgjsjd",
+      "email": "sagjhkd",
+      "number": "ewvghj",
+      "id": 1
+    },
+    {
+      "name": "nawaz",
+      "email": "sagjhkd",
+      "number": "ewvghj",
+      "id": 2
+    },
+    {
+      "name": "Shahnawaz",
+      "email": "shahnawaz786.iimt@gmail.com",
+      "number": 8448615225,
+      "id": 3
+    },
+    {
+      "name": "Shahnawaz",
+      "email": "nawaz786.iimt@gmail.com",
+      "number": 9310514944,
+      "id": 4
+    },
+    {
+      "name": "Ayan",
+      "email": "ayan@123.com",
+      "number": 9289269243,
+      "id": 5
+    },
+    {
+      "name": "Shahnawaz",
+      "email": "shahnawaz786.iimt@gmail.com",
+      "number": 123456,
+      "id": 6
+    },
+    {
+      "name": "abhisekh",
+      "email": "abhisekh@123.com",
+      "number": 123456,
+      "id": 7
+    }
+  ],
+  "msgdata": [
+    {
+      "name": "Md Shahnawaz Hussain",
+      "email": "shahnawaz786.iimt@gmail.com",
+      "message": "rcdxs",
+      "id": 1
+    },
+    {
+      "name": "Md Shahnawaz Hussain",
+      "email": "shahnawaz786.iimt@gmail.com",
+      "message": "wqeq233ewqeq  shahnawaz786.iimt@gmail.com\nshahnawaz786.iimt@gmail.com\nshahnawaz786.iimt@gmail.com\nshahnawaz786.iimt@gmail.com\nshahnawaz786.iimt@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "ankit",
+      "email": "ankit@2323.com",
+      "message": "ankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.comankit@2323.com",
+      "id": 3
+    },
+    {
+      "name": "Md Shahnawaz Hussain",
+      "email": "shahnawaz786.iimt@gmail.com",
+      "message": "textareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareatextareav",
+      "id": 4
+    }
+  ]
+}

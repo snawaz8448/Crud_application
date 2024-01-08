@@ -1,0 +1,48 @@
+<main class="contact shadow">
+  <!-- <div class="row">
+    <div class="col-6"> -->
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form [formGroup]="contactinfoform">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required [formControl]="name" />
+      <span
+      class="text-md"
+      *ngIf="name.invalid && name.touched && name.validator"
+      style="color: red"
+      >{{ getErrorMessage(name, "Name") }}</span
+    >
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required  [formControl]="email"/>
+      <span
+      class="text-md"
+      *ngIf="email.invalid && email.touched && email.validator"
+      style="color: red"
+      >{{ getErrorMessage(email, "Email") }}</span
+    >
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required [formControl]="message"></textarea>
+      <span
+      class="text-md"
+      *ngIf="message.invalid && message.touched && message.validator"
+      style="color: red"
+      >{{ getErrorMessage(message, "Message") }}</span
+    >
+<br>
+      <button type="submit" (click)="sendmsg()">Send Message</button>
+    </form>
+  </section>
+  <!-- </div> -->
+  <!-- <div class="col-6"> -->
+  <section class="contact-details">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> snawaz@wattmonk.com</p>
+    <p><strong>Phone:</strong> +91 8448615225</p>
+    <p><strong>Address:</strong> NSEZ, Noida, India</p>
+  </section>
+  <!-- </div>
+  </div> -->
+</main>
+

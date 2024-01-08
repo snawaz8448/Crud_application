@@ -1,0 +1,10 @@
+main {
+    max-width: 60vw;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(222, 248, 239)
+}
+
+.service {
+    margin-bottom: 40px;
+}
